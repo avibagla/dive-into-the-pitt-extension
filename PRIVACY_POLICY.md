@@ -2,65 +2,32 @@
 
 **Last Updated:** January 2025
 
-## Overview
+## The Simple Version
 
-The "Dive into The Pitt" Chrome extension enhances your viewing experience of HBO's "The Pitt" series by synchronizing episodes with real-world time. This privacy policy explains how the extension handles data.
+This extension helps you watch "The Pitt" in real-time by remembering your preferences (like where you put the timer) and keeping track of which episode you're on. Everything stays on your computer - we don't collect, send, or sell any of your information.
 
-## Data Collection and Usage
+## What We Store (On Your Computer Only)
 
-### What Data We Store
-The extension stores the following data **locally on your device only**:
+- Your timer position and settings
+- Whether you have real-time mode turned on
+- Which episode you're currently watching
 
-- **User Preferences**: Timer position, debug settings, and interface preferences
-- **Viewing State**: Current episode progress, whether real-time mode is active
-- **Episode Data**: Timing information for synchronization purposes
+## What We DON'T Do
 
-### How We Use This Data
-All stored data is used exclusively to:
-- Maintain your real-time viewing experience across browser sessions
-- Remember your preferred settings (timer position, etc.)
-- Ensure accurate episode synchronization when you return to watching
+- ❌ Collect personal information (no names, emails, etc.)
+- ❌ Send data to any servers
+- ❌ Track your browsing outside of "The Pitt" episodes
+- ❌ Use analytics or tracking tools
+- ❌ Sell or share any data
 
-## Data Storage and Security
+## How to Remove Your Data
 
-- **Local Storage Only**: All data is stored locally in your browser using Chrome's storage API
-- **No External Transmission**: No data is ever sent to external servers or third parties
-- **No Personal Information**: We do not collect names, emails, or any personally identifiable information
-- **No Tracking**: We do not track your browsing habits outside of "The Pitt" episodes on Max
+Just uninstall the extension! All data is automatically deleted when you remove it.
 
-## Third-Party Services
+## Questions?
 
-- **Max Integration**: The extension only works on Max (play.max.com) and requires your existing Max subscription
-- **No Analytics**: We do not use Google Analytics or any tracking services
-- **No External APIs**: No data is sent to external services
-
-## Your Rights
-
-- **Data Control**: You can clear all extension data by removing the extension or clearing browser data
-- **Opt-Out**: Simply disable or uninstall the extension to stop all data storage
-- **Transparency**: All extension code is open source and available for review
-
-## Data Retention
-
-- Data is retained only while the extension is installed
-- Uninstalling the extension removes all stored data
-- You can manually clear data through Chrome's extension settings
-
-## Changes to This Policy
-
-We may update this privacy policy to reflect changes in our practices or for legal compliance. Any changes will be posted in this document with an updated "Last Updated" date.
-
-## Contact
-
-For questions about this privacy policy or the extension's data practices, please create an issue on our GitHub repository.
-
-## Compliance
-
-This extension complies with:
-- Chrome Web Store Developer Program Policies
-- General Data Protection Regulation (GDPR) principles
-- California Consumer Privacy Act (CCPA) requirements
+Create an issue on our [GitHub repository](https://github.com/avibagla/dive-into-the-pitt-extension) if you have any questions.
 
 ---
 
-**Summary**: This extension stores minimal data locally on your device to enhance your viewing experience. No personal information is collected, and no data is shared with third parties. 
+**Bottom Line**: We just want to help you enjoy "The Pitt" in real-time. Your privacy is important to us, so we keep everything simple and local to your device. 
