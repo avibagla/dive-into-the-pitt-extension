@@ -1,6 +1,6 @@
 # Privacy Policy for Dive into The Pitt Chrome Extension
 
-**Last Updated:** January 2025
+**Last Updated:** May 2025
 
 ## The Simple Version
 
@@ -30,4 +30,4 @@ Create an issue on our [GitHub repository](https://github.com/avibagla/dive-into
 
 ---
 
-**Bottom Line**: We just want to help you enjoy "The Pitt" in real-time. Your privacy is important to us, so we keep everything simple and local to your device. 
+**Bottom Line**: I just want to help you enjoy "The Pitt" in real-time. Your privacy is important to me, so we keep everything simple and local to your device. Serious y'all, I don't want your data.
