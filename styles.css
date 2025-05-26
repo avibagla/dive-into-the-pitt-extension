@@ -1,0 +1,394 @@
+/* Dive into The Pitt Extension Styles */
+
+#pitt-realtime-control {
+  position: fixed;
+  opacity: 0.7;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #00d4ff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  z-index: 60000; /* Above gap overlay */
+  min-width: 280px;
+  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+  transition: opacity 0.2s ease;
+}
+
+#pitt-realtime-control:hover {
+  opacity: 1;
+}
+
+.pitt-control-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.pitt-control-header h3 {
+  margin: 0;
+  margin-right: 20px;
+  color: #00d4ff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.minimize-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid #555;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.minimize-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pitt-control-content {
+  /* Default shown state */
+}
+
+.pitt-minimized-content {
+  padding: 8px 0;
+  border-top: 1px solid #333;
+  margin-top: 10px;
+}
+
+.minimized-layout {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.minimized-text {
+  color: #00d4ff;
+  font-weight: 600;
+  font-size: 14px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.mini-toggle {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.mini-toggle:hover {
+  background: linear-gradient(135deg, #ee5a52, #ff6b6b);
+  transform: translateY(-1px);
+}
+
+#pitt-minimized-episode {
+  padding: 4px 0;
+  border-left: 3px solid #00d4ff;
+  padding-left: 8px;
+  background: rgba(0, 212, 255, 0.1);
+  border-radius: 0 4px 4px 0;
+  font-size: 13px;
+}
+
+#pitt-toggle {
+  background: linear-gradient(135deg, #51cf66, #40c057);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 10px rgba(81, 207, 102, 0.3);
+}
+
+#pitt-toggle:hover {
+  background: linear-gradient(135deg, #40c057, #51cf66);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(81, 207, 102, 0.4);
+}
+
+#pitt-toggle.active {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+  box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3);
+}
+
+#pitt-toggle.active:hover {
+  background: linear-gradient(135deg, #ee5a52, #ff6b6b);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.pitt-status {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pitt-status div {
+  padding: 4px 0;
+  border-left: 3px solid #00d4ff;
+  padding-left: 8px;
+  background: rgba(0, 212, 255, 0.1);
+  border-radius: 0 4px 4px 0;
+}
+
+#pitt-shift-timer {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(220, 20, 60, 0.9);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 2px solid #ff4757;
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 60001; /* Above gap overlay */
+  user-select: none;
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#pitt-shift-timer.shrunk {
+  padding: 8px 12px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+#pitt-shift-timer:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.timer-content {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Debug time simulator */
+#pitt-debug-simulator {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}
+
+#pitt-debug-simulator label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+#pitt-debug-time {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 12px;
+}
+
+#pitt-debug-apply {
+  margin-top: 5px;
+  background: #ffc107;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#pitt-debug-apply:hover {
+  background: #e0a800;
+}
+
+/* Full-screen gap timer */
+#pitt-gap-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 50000; /* Below controls */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.gap-timer-main {
+  font-size: 120px;
+  font-weight: 900;
+  color: #ff6b6b;
+  text-shadow: 0 0 30px rgba(255, 107, 107, 0.6);
+  margin-bottom: 30px;
+  font-family: 'Courier New', monospace;
+  animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+/* Special styling for shift over screen */
+#pitt-gap-overlay .gap-timer-main {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  text-shadow: none;
+  animation: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 600px;
+}
+
+.gap-timer-label {
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Special styling for shift over label */
+#pitt-gap-overlay .gap-timer-label {
+  font-size: 48px;
+  color: #ff6b6b;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Shift over screen styling */
+.shift-over-label {
+  font-size: 48px;
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.shift-over-message {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 600px;
+}
+
+.gap-timer-next {
+  font-size: 20px;
+  color: #00d4ff;
+  text-align: center;
+  font-weight: 500;
+}
+
+@keyframes pulse-glow {
+  from {
+    text-shadow: 0 0 30px rgba(255, 107, 107, 0.6);
+    transform: scale(1);
+  }
+  to {
+    text-shadow: 0 0 50px rgba(255, 107, 107, 0.9);
+    transform: scale(1.02);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #pitt-realtime-control {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    min-width: auto;
+    font-size: 12px;
+  }
+  
+  .pitt-control-header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+  
+  #pitt-toggle {
+    width: 100%;
+  }
+  
+  #pitt-shift-timer {
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+  }
+}
+
+/* Animation for countdown states */
+.pitt-countdown {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Special styling for different states */
+.shift-active {
+  border-color: #28a745;
+  background: rgba(40, 167, 69, 0.9);
+}
+
+.shift-break {
+  border-color: #ffc107;
+  background: rgba(255, 193, 7, 0.9);
+  color: black;
+}
+
+.shift-complete {
+  border-color: #6c757d;
+  background: rgba(108, 117, 125, 0.9);
+}
+
+/* Hide extension UI when Max is in fullscreen */
+:-webkit-full-screen #pitt-realtime-control,
+:-webkit-full-screen #pitt-shift-timer {
+  display: none;
+}
+
+:-moz-full-screen #pitt-realtime-control,
+:-moz-full-screen #pitt-shift-timer {
+  display: none;
+}
+
+:fullscreen #pitt-realtime-control,
+:fullscreen #pitt-shift-timer {
+  display: none;
+} 
