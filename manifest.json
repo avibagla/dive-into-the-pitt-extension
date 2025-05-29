@@ -4,8 +4,7 @@
   "version": "1.0",
   "description": "Match up with The Pitt's emergency room shift as it happens.",
   "permissions": [
-    "activeTab",
-    "storage"
+    "activeTab"
   ],
   "content_scripts": [
     {
